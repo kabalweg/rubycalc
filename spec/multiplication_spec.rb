@@ -1,4 +1,4 @@
-require_relative "../classes/multiplication"
+require_relative "../lib/classes/multiplication"
 
 describe Multiplication do
 

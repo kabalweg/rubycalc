@@ -1,4 +1,4 @@
-require_relative "../classes/division"
+require_relative "../lib/classes/division"
 
 describe Division do
   let(:divide) { Division.new }

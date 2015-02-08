@@ -1,4 +1,4 @@
-require_relative "../classes/addition"
+require_relative "../lib/classes/addition"
 
 describe Addition do
 

@@ -1,4 +1,4 @@
-require_relative "../classes/subtraction"
+require_relative "../lib/classes/subtraction"
 
 describe Subtraction do
   let(:subtract) { Subtraction.new }
