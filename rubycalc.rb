@@ -1,27 +1,25 @@
+#!/usr/bin/env ruby
+
 require_relative "function"
+require_relative "lib/classes/addition"
 
-puts "=============="
-puts "     MENU     "
-puts "=============="
-puts "1 = Add"
-puts "2 = Subtract"
-puts "3 = Multiply"
-puts "4 = Divide"
-puts "=============="
-puts ""
-puts "Enter selection:"
 
-selection = gets
+selection = nil
 
-puts "You selected #{selection}"
+until false
 
-case selection.to_i
-when 1
-  add
-when 2
-  subtract
-when 3
-  multiply
-else # 4
-  divide
+  selection = menu
+
+  case selection
+  when '1'
+    add
+  when '2'
+    subtract
+  when '3'
+    multiply
+  when '4'
+    divide
+  when 'q', 'Q'
+    quit
+  end
 end
