@@ -2,12 +2,13 @@
 
 require_relative "function"
 require_relative "lib/classes/addition"
-
+require_relative "lib/classes/subtraction"
+require_relative "lib/classes/multiplication"
+require_relative "lib/classes/division"
 
 selection = nil
 
-until false
-
+while true
   selection = menu
 
   case selection

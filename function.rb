@@ -15,20 +15,18 @@ def menu
   puts "=============="
   puts ""
   print "Enter selection: "
-
   gets.chomp
 end
 
 def add
   input = 'y'
-
   while input.to_s != 'n' do
     show_header("Addition")
 
     first_number, second_number = prompt_for_number
 
-    addition = Addition.new(first_number, second_number)
-    result = addition.result
+    operation = Addition.new(first_number, second_number)
+    result = operation.result
     puts "Result: #{result}"
 
     puts ""
@@ -38,16 +36,55 @@ def add
 end
 
 def subtract
-  show_header("Subtraction")
+  input = 'y'
+  while input.to_s != 'n' do
+    show_header("Subtraction")
+
+    first_number, second_number = prompt_for_number
+
+    operation = Subtraction.new(first_number, second_number)
+    result = operation.result
+    puts "Result: #{result}"
+
+    puts ""
+    print "Subtract again? (y/n): "
+    input = gets.chomp
+  end
 end
 
 
 def multiply
-  show_header("Multiplication")
+  input = 'y'
+  while input.to_s != 'n' do
+    show_header("Multiplication")
+
+    first_number, second_number = prompt_for_number
+
+    operation = Multiplication.new(first_number, second_number)
+    result = operation.result
+    puts "Result: #{result}"
+
+    puts ""
+    print "Multiply again? (y/n): "
+    input = gets.chomp
+  end
 end
 
 def divide
-  show_header("Division")
+  input = 'y'
+  while input.to_s != 'n' do
+    show_header("Division")
+
+    first_number, second_number = prompt_for_number
+
+    operation = Division.new(first_number, second_number)
+    result = operation.result
+    puts "Result: #{result}"
+
+    puts ""
+    print "Divide again? (y/n): "
+    input = gets.chomp
+  end
 end
 
 def quit
